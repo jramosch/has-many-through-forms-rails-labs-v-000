@@ -20,4 +20,5 @@ class Post < ActiveRecord::Base
       users << comment.user
     end
     users.uniq
+  end
 end
