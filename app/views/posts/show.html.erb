@@ -19,7 +19,7 @@
 
 <h4>Users who commented:</h4>
   <% @post.users.uniq |user| %>
-    <% link_to user.username, user_path(user) %>
+    <% link_to user.username, user_path(user) %><br>
   <% end %>
 
 <h4>Leave a comment:</h4>
