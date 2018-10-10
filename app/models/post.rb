@@ -11,4 +11,13 @@ class Post < ActiveRecord::Base
       self.categories << category
     end
   end
+
+  private
+
+  def comment_users
+    users = []
+    self.comments.each do |comment|
+      users << comment.user
+    end
+    users
 end
