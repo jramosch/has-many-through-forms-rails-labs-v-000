@@ -12,7 +12,7 @@ class Post < ActiveRecord::Base
     end
   end
 
-  #private
+private
 
   def comment_users
     users = []
