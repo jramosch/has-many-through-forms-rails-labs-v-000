@@ -19,5 +19,5 @@ class Post < ActiveRecord::Base
     self.comments.each do |comment|
       users << comment.user
     end
-    users
+    users.uniq
 end
